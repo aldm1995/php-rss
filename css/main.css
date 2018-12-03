@@ -6,6 +6,10 @@ html {
     line-height: 1.4;
 }
 
+a:visited {
+  color: #D3D3D3;
+}
+
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -70,18 +74,18 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    border-bottom: 20px solid #ff5900;
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
+    border-top: 20px solid #ff5900;
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
+    background: #0095ff;
 }
 
 .title {

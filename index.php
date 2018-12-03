@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="js/main.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -51,7 +52,6 @@
 
                     <section>
                         <!-- RSS entries go here -->
-
                        <script>
                           function showRSS(str) {
                              if (str.length == 0) {
@@ -73,12 +73,14 @@
                              xmlhttp.open("GET","rss.php?q="+str,true);
                              xmlhttp.send();
                           }
+
+
                        </script>
 
                     </head>
 
                     <body>
-                       <p>Please Select an option to get RSS:</p>
+                       <p>Please Select a RSS option:</p>
 
                        <form>
                           <select onchange = "showRSS(this.value)">
@@ -86,6 +88,7 @@
                              <option value = "cnn">CNN</option>
                              <option value = "bbc">BBC News</option>
                              <option value = "nasa">NASA</option>
+
                           </select>
                        </form>
                        <br>

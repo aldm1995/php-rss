@@ -5,7 +5,7 @@
       $xml = ("http://rss.cnn.com/rss/cnn_topstories.rss");
    }elseif($q == "bbc") {
       $xml = ("http://newsrss.bbc.co.uk/rss/newsonline_world_edition/americas/rss.xml");
-   }elseif($q = "nasa"){
+   }elseif($q == "nasa") {
       $xml = ("http://www.nasa.gov/rss/image_of_the_day.rss");
    }
 
@@ -26,11 +26,14 @@
    $channel_post = $channel->getElementsByTagName('pubDate')
    ->item(0)->childNodes->item(0)->nodeValue;
 
-   echo("<p><a href = '" . $channel_link . "'>" .
+   $channel_new = date("m/d/Y",strtotime($channel_post));
+
+   echo("<p><a href = '". $channel_link ."'> ".
       $channel_title . "</a>");
    echo("<br>");
    echo($channel_desc . "</p>");
-   echo ("$channel_post. </p>");
+   echo ($channel_new . "</p>");
+
 
    $x = $xmlDoc->getElementsByTagName('item');
 
@@ -47,10 +50,14 @@
       $item_post = $x->item($i)->getElementsByTagName('pubDate')
       ->item(0)->childNodes->item(0)->nodeValue;
 
-      echo ("<p><a href = '" . $item_link . "'>" .
+      $item_new = date("m/d/Y", strtotime($item_post));
+
+
+      echo ("<p><a href = '". $item_link ."'>" .
          $item_title . "</a>");
       echo ("<br>");
       echo ($item_desc . "</p>");
-      echo ($item_post. "</p>");
+      echo ($item_new . "</p>");
+
    }
 ?>
