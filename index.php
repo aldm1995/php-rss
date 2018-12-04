@@ -16,6 +16,7 @@
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="js/main.js"></script>
+        <base target="_blank">
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -85,10 +86,9 @@
                        <form>
                           <select onchange = "showRSS(this.value)">
                              <option value = "">Select an RSS-feed:</option>
-                             <option value = "cnn">CNN</option>
-                             <option value = "bbc">BBC News</option>
-                             <option value = "nasa">NASA</option>
-
+                             <option id = "cnn" value = "cnn">CNN</option>
+                             <option id = "bbc" value = "bbc">BBC News</option>
+                             <option id = "nasa" value = "nasa">NASA</option>
                           </select>
                        </form>
                        <br>
@@ -101,8 +101,10 @@
                 </article>
 
                 <aside>
-                    <h3>Preview</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
+                    <h3></h3>
+                      <div class="image">
+                      <p></p>
+                      </div>
                 </aside>
 
             </div> <!-- #main -->

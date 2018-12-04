@@ -74,12 +74,17 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #ff5900;
+    border-bottom: 20px solid #00ff89;
+}
+
+.main aside {
+  height: 30%;
+  background: url('../img/bbc.jpg')
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #ff5900;
+    border-top: 20px solid #00ff89;
 }
 
 .header-container,
@@ -137,8 +142,17 @@ nav a:hover {
 }
 
 .main aside {
+    background: url('../img/bbc.jpg');
     color: white;
-    padding: 0px 5% 10px;
+    background-position: top-center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-left: 10%;
+    padding-bottom: 35%;
+    max-width: 500px;
+    height: 100%;
+    margin-top: 10%;
 }
 
 .footer-container footer {

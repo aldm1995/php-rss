@@ -28,10 +28,10 @@
 
    $channel_new = date("m/d/Y h:i a",strtotime($channel_post));
 
-   echo("<p><a href = '". $channel_link ."'> ".
+   echo ("<p><a href = '". $channel_link ."'> ".
       $channel_title . "</a>");
-   echo("<br>");
-   echo($channel_desc . "</p>");
+   echo ("<br>");
+   echo ($channel_desc . "</p>");
    echo ($channel_new . "</p>");
 
 
